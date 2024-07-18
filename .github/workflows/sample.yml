@@ -2,7 +2,8 @@ name: learning git hub actions.
 
 on:
   workflow_dispatch:
-    
+  push: 
+  
 jobs:
   build-job:
     name: Hello world actions.
