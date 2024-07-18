@@ -1,5 +1,8 @@
 name: learning git hub actions.
 
+on: push
+workflow_dispatch:
+  
 jobs:
   build-job:
     name: Hello world actions.
@@ -9,3 +12,4 @@ jobs:
       name: checkout code
     - name: get the system information
       run: uname -a 
+      
