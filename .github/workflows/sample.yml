@@ -8,5 +8,4 @@ jobs:
     - uses: actions/checkout@v1
       name: checkout code
     - name: get the system information
-      run: unname -a 
-      
+      run: uname -a 
