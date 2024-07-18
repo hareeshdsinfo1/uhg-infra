@@ -1,5 +1,5 @@
 name: learning git hub actions.
-on: push
+
 jobs:
   build-job:
     name: Hello world actions.
