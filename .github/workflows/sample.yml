@@ -1,16 +1,20 @@
-name: learning git hub actions.
+name: 'Terra space Deployment'
 
-on:
-  workflow_dispatch:
-  push: 
-  
+on: push
+
+
 jobs:
-  build-job:
-    name: Hello world actions.
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-      name: checkout code
-    - name: get the system information
-      run: uname -a 
+  install-tools:
+    name: insta terraspace
+    run-name: ubuntu-latest
+  steps:
+    -uses: actions/checkout@v1
+     name: checkout the code
+
+
+
+
+
+  
+
       
