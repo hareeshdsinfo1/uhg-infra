@@ -1,16 +1,21 @@
-name: 'Terra space Deployment'
+name: Greeting on variable day
 
-on: push
+on:
+  workflow_dispatch
 
+env:
+  DAY_OF_WEEK: Monday
 
 jobs:
-  install-tools:
-    name: insta terraspace
-    run-name: ubuntu-latest
-  steps:
-    -uses: actions/checkout@v1
-     name: checkout the code
-
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello Mona it's Monday"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        env:
+          First_Name: Mona
 
 
 
