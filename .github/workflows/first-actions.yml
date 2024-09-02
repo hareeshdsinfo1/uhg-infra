@@ -13,6 +13,8 @@ jobs:
         run: echo "$say $sai. Today is $DAY_OF_WEEK!"
         env:
           DAY_OF_WEEK: 'Monday'
+      - name: "Say Hello Mona it's Monday"
+        run: echo "$say $sai. Today is $DAY_OF_WEEK!"
 
 
 
