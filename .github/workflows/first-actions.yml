@@ -2,17 +2,17 @@ name: Greeting on variable day
 on:
   push:
 env:
-  DAY_OF_WEEK: Monday
+  sai: srisai 
 jobs:
-  greeting_job:
+  welcome_job:
     runs-on: ubuntu-latest
     env:
-      Greeting: Hello
+      say: Hello
     steps:
       - name: "Say Hello Mona it's Monday"
-        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        run: echo "$say $sai. Today is $DAY_OF_WEEK!"
         env:
-          First_Name: Mona
+          DAY_OF_WEEK: Monday
 
 
 
