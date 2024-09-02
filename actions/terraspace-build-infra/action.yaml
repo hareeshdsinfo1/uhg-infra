@@ -1,0 +1,14 @@
+name: 'Terraspace Infra Build'
+
+inputs:
+  environment:
+    description: 'Environment to create infra in'
+    required: true
+  deploymentName:
+    description: 'Deploymnt to create infra in'
+runs:
+  steps:
+  - uses: actions/checkout@v2
+  - uses: actions/setup-ruby@v1
+    with:
+      ruby-version: '2.6'
