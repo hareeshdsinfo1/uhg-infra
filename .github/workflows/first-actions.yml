@@ -2,7 +2,7 @@ name: Greeting on variable day
 on:
   push:
 env:
-  sai: 'srisai'
+  sai: 'harish'
 jobs:
   welcome_job:
     runs-on: ubuntu-latest
