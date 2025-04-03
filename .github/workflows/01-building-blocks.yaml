@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Say hello
         id: sreeja
-        run: echo "pp_s=helloworld"
+        run: echo "pp_s=helloworld" >> $GITHUB_ENV
       - name: to list file
         run: ls -l
   echo-goodbye:
