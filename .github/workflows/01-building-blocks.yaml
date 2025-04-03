@@ -14,14 +14,10 @@ jobs:
         run: ls -l
   echo-goodbye:
     runs-on: ubuntu-latest
+    needs: echo-hello
     steps:
-      - name: Failed step
-        run: |
-          echo "i am"
-          echo "a multi-line"
-          echo "script."
-      - name: Say goodbye
-        run:  echo "Goodbye!"
+      - name: call the out of the previuos job
+        run: echo ${{needs.echo-hello.outputs.harish}}
 
 
 
