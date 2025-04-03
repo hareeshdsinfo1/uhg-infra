@@ -17,7 +17,7 @@ jobs:
     needs: echo-hello
     steps:
       - name: call the out of the previuos job
-        run: echo "${{needs.echo-hello.outputs.harish}}"
+        run: echo ${{needs.echo-hello.outputs.harish}}
 
 
 
