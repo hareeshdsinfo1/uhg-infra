@@ -4,9 +4,12 @@ on: [ push, workflow_dispatch ]
 jobs:
   echo-hello:
     runs-on: ubuntu-latest
+    outputs:
+      harish: ${{steps.sreeja.outputs.pp_s}}
     steps:
       - name: Say hello
-        run: echo "Hello, World!"
+        id: sreeja
+        run: echo "pp_s=helloworld"
       - name: to list file
         run: ls -l
   echo-goodbye:
